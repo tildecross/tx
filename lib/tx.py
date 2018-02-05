@@ -1,4 +1,7 @@
-import core
+from core import Core
 
-# Just to test that import is working
-print(core.reverse("Hello"))
+class Tx:
+    def __init__(self):
+        self.core = Core()
+        
+tx = Tx()
